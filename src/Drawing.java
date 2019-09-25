@@ -5,6 +5,7 @@ import java.awt.event.WindowEvent;
 public class Drawing extends Canvas {
     private Frame f;
     private Circle circle;
+    private Rect rect;
     public Drawing(){
         f = new Frame("My window"); 	// Instantiates the Frame
         f.add(this);			// Adds the Canvas to the Frame
@@ -19,8 +20,10 @@ public class Drawing extends Canvas {
         setBackground(Color.WHITE);
         setSize(400, 400);
         circle=new Circle(new Point(200,200),new Color(0x992266),80);
+        rect=new Rect(new Point(100,100),new Color(0x922266),80, 30);
     }
     public void paint(Graphics g){
         circle.draw(g);
+        rect.draw(g);
     }
 }

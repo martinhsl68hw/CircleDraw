@@ -3,17 +3,15 @@ import java.awt.*;
  *  The Circle class encapsulates the information describing a circle and can draw it in a
  * AWT Graphics object using AWT library methods
  * */
-public class Circle {
+public class Circle extends Shape {
     private int rad;
-    private Point pos;
-    private Color col;
 
     public Circle(Point initPos, Color col, int radius){
+        super(initPos, col);
         rad=radius;
-        pos=initPos;
-        this.col=col;
     }
 
+    @Override
     public void draw(Graphics g) {
         // Fill
         g.setColor(col);
