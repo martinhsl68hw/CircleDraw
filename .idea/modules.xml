@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CircleDraw.iml" filepath="$PROJECT_DIR$/CircleDraw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CircleDraw.main.iml" filepath="$PROJECT_DIR$/.idea/modules/CircleDraw.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CircleDraw.test.iml" filepath="$PROJECT_DIR$/.idea/modules/CircleDraw.test.iml" />
     </modules>
   </component>
 </project>
