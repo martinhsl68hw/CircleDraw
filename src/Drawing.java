@@ -8,6 +8,23 @@ public class Drawing extends Canvas {
     private Rect rect;
     private Square sqr;
     public Drawing(){
+        setupFrame();
+        setupCanvas();
+        setupShapes();
+    }
+
+    private void setupShapes() {
+        circle=new Circle(new Point(200,200),new Color(0x992266),80);
+        rect=new Rect(new Point(100,100),new Color(0x922266),80, 30);
+        sqr=new Square(new Point(200,100),new Color(0x552266),80);
+    }
+
+    private void setupCanvas() {
+        setBackground(Color.WHITE);
+        setSize(400, 400);
+    }
+
+    private void setupFrame() {
         f = new Frame("My window"); 	// Instantiates the Frame
         f.add(this);			// Adds the Canvas to the Frame
         f.setLayout(null);			// Stops the frame from trying to layout contents
@@ -18,12 +35,8 @@ public class Drawing extends Canvas {
                 f.dispose();
             }
         });
-        setBackground(Color.WHITE);
-        setSize(400, 400);
-        circle=new Circle(new Point(200,200),new Color(0x992266),80);
-        rect=new Rect(new Point(100,100),new Color(0x922266),80, 30);
-        sqr=new Square(new Point(200,100),new Color(0x552266),80);
     }
+
     public void paint(Graphics g){
         circle.draw(g);
         rect.draw(g);
