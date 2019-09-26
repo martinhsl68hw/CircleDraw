@@ -1,3 +1,5 @@
+import shapes.*;
+
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
@@ -8,9 +10,9 @@ public class Drawing extends Canvas {
     private Rect rect;
     private Square sqr;
     public Drawing(){
+        setupShapes();
         setupFrame();
         setupCanvas();
-        setupShapes();
     }
 
     private void setupShapes() {
